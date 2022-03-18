@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_news_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:fontFamily="Arial"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/tv_news_item_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_news_item_title"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:fontFamily="Arial"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/iv_news_item_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_news_item_description"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_news_item_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/iv_news_item_pic"
+        android:autoLink="web"
+
+        android:linksClickable="true"
+        android:fontFamily="Arial"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
